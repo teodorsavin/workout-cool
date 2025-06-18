@@ -14,6 +14,7 @@
     "lint": "next lint",
     "import:exercises-full": "tsx scripts/import-exercises-with-attributes.ts",
     "db:seed": "pnpm run import:exercises-full ./data/sample-exercises.csv",
+    "generate:pushups-schedule": "tsx scripts/generate-pushup-schedule.ts",
     "migrate:prod": "env-cmd -f .env.production prisma migrate deploy"
   },
   "resolutions": {
