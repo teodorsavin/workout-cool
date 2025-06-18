@@ -195,6 +195,17 @@ id,name,name_en,description,description_en,full_video_url,full_video_image_url,i
 - **EQUIPMENT**: `BARBELL`, `DUMBBELL`, `BODYWEIGHT`, `MACHINE`, etc.
 - **MECHANICS_TYPE**: `COMPOUND`, `ISOLATION`
 
+### Generate Pushup Schedule
+
+You can quickly create a progressive pushup plan using the provided script:
+
+```bash
+# <initial max reps> <goal> <weeks>
+pnpm exec tsx scripts/generate-pushup-schedule.ts 10 100 6
+```
+
+This outputs a JSON schedule containing three sessions per week with five sets each.
+
 ## Project Architecture
 
 This project follows **Feature-Sliced Design (FSD)** principles with Next.js App Router:
